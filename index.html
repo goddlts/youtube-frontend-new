@@ -206,7 +206,7 @@
   </div>
   <script type="text/html" id="tpl-videos">
     {{ each videos }}
-    <a href="/watch/4c9a962a-5f07-4dcf-9e6e-bf5407cf9d48">
+    <a href="/watch.html?id={{ $value.id }}">
       <div class="video">
         <img class="thumb"
           src="{{ $value.thumbnail }}"

@@ -5,12 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="icon" href="/youtube.svg" />
+  <link rel="icon" href="./assets/images/youtube.svg" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Youtube Clone" />
-  <link rel="apple-touch-icon" href="/youtube.svg" />
+  <link rel="apple-touch-icon" href="./assets/images/youtube.svg" />
   <title>YouTube</title>
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/layout.css" rel="stylesheet" />
@@ -155,517 +154,135 @@
   <div class="main">
     <div class="content">
       <div class="video-container">
-        <div class="video">
-          <!-- 视频播放器 -->
-          <div preload="auto"
-            class="video-js vjs-big-play-centered vjs-controls-enabled vjs-workinghover vjs-v7 my-player-dimensions vjs-playing vjs-has-started vjs-user-inactive"
-            id="my-player" tabindex="-1" role="region" lang="en" aria-label="Video Player"><video
-              id="my-player_html5_api" class="vjs-tech" preload="auto" tabindex="-1" role="application" muted="muted"
-              autoplay=""
-              src="http://res.cloudinary.com/nllcoder/video/upload/v1637310579/youtube/xyebj5cz3lkbdlkmk6ym.mp4">
-              <source id="source"
-                src="http://res.cloudinary.com/nllcoder/video/upload/v1637310579/youtube/xyebj5cz3lkbdlkmk6ym.mp4">
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank" class="vjs-hidden" hidden="hidden">
-                  supports HTML5 video
-                </a>
-              </p>
-            </video>
-            <div class="vjs-poster vjs-hidden" tabindex="-1" aria-disabled="false"></div>
-            <div class="vjs-text-track-display" aria-live="off" aria-atomic="true">
-              <div style="position: absolute; inset: 0px; margin: 1.5%;"></div>
-            </div>
-            <div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span>
-            </div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false"><span
-                aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                aria-live="polite">Play Video</span></button>
-            <div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button vjs-playing"
-                type="button" title="Pause" aria-disabled="false"><span aria-hidden="true"
-                  class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                  aria-live="polite">Pause</span></button>
-              <div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button
-                  class="vjs-mute-control vjs-control vjs-button vjs-vol-0" type="button" title="Unmute"
-                  aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span
-                    class="vjs-control-text" aria-live="polite">Unmute</span></button>
-                <div class="vjs-volume-control vjs-control vjs-volume-horizontal">
-                  <div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider"
-                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite"
-                    aria-valuetext="0%">
-                    <div class="vjs-volume-level"><span class="vjs-control-text"></span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text"
-                  role="presentation">Current Time&nbsp;</span><span class="vjs-current-time-display" aria-live="off"
-                  role="presentation">1:41</span></div>
-              <div class="vjs-time-control vjs-time-divider" aria-hidden="true">
-                <div><span>/</span></div>
-              </div>
-              <div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text"
-                  role="presentation">Duration&nbsp;</span><span class="vjs-duration-display" aria-live="off"
-                  role="presentation">8:09</span></div>
-              <div class="vjs-progress-control vjs-control">
-                <div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider"
-                  aria-valuenow="20.68" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar"
-                  aria-valuetext="1:41 of 8:09">
-                  <div class="vjs-load-progress" style="width: 29.4%;"><span
-                      class="vjs-control-text"><span>Loaded</span>: <span
-                        class="vjs-control-text-loaded-percentage">29.40%</span></span>
-                    <div data-start="0" data-end="143.983" style="left: 0%; width: 100%;"></div>
-                  </div>
-                  <div class="vjs-mouse-display">
-                    <div class="vjs-time-tooltip" aria-hidden="true"></div>
-                  </div>
-                  <div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 20.68%;">
-                    <div class="vjs-time-tooltip" aria-hidden="true" style="right: -24px;">1:41</div>
-                  </div>
-                </div>
-              </div>
-              <div class="vjs-live-control vjs-control vjs-hidden">
-                <div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream
-                    Type&nbsp;</span>LIVE</div>
-              </div><button class="vjs-seek-to-live-control vjs-control" type="button"
-                title="Seek to live, currently behind live" aria-disabled="false"><span aria-hidden="true"
-                  class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Seek to live,
-                  currently behind live</span><span class="vjs-seek-to-live-text"
-                  aria-hidden="true">LIVE</span></button>
-              <div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text"
-                  role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span
-                  class="vjs-remaining-time-display" aria-live="off" role="presentation">6:28</span></div>
-              <div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div>
-              <div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden">
-                <div class="vjs-playback-rate-value">1x</div><button
-                  class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button"
-                  aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false"><span
-                    aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                    aria-live="polite">Playback Rate</span></button>
-                <div class="vjs-menu">
-                  <ul class="vjs-menu-content" role="menu"></ul>
-                </div>
-              </div>
-              <div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden">
-                <button class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button"
-                  aria-disabled="false" title="Chapters" aria-haspopup="true" aria-expanded="false"><span
-                    aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                    aria-live="polite">Chapters</span></button>
-                <div class="vjs-menu">
-                  <ul class="vjs-menu-content" role="menu">
-                    <li class="vjs-menu-title" tabindex="-1">Chapters</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden">
-                <button class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button"
-                  aria-disabled="false" title="Descriptions" aria-haspopup="true" aria-expanded="false"><span
-                    aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                    aria-live="polite">Descriptions</span></button>
-                <div class="vjs-menu">
-                  <ul class="vjs-menu-content" role="menu">
-                    <li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false"
-                      aria-checked="true"><span class="vjs-menu-item-text">descriptions off</span><span
-                        class="vjs-control-text" aria-live="polite">, selected</span></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden">
-                <button class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button"
-                  aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false"><span
-                    aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                    aria-live="polite">Captions</span></button>
-                <div class="vjs-menu">
-                  <ul class="vjs-menu-content" role="menu">
-                    <li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem"
-                      aria-disabled="false"><span class="vjs-menu-item-text">captions settings</span><span
-                        class="vjs-control-text" aria-live="polite">, opens captions settings dialog</span></li>
-                    <li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false"
-                      aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span
-                        class="vjs-control-text" aria-live="polite">, selected</span></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden">
-                <button class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button"
-                  aria-disabled="false" title="Audio Track" aria-haspopup="true" aria-expanded="false"><span
-                    aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                    aria-live="polite">Audio Track</span></button>
-                <div class="vjs-menu">
-                  <ul class="vjs-menu-content" role="menu"></ul>
-                </div>
-              </div><button class="vjs-picture-in-picture-control vjs-control vjs-button" type="button"
-                title="Picture-in-Picture" aria-disabled="false"><span aria-hidden="true"
-                  class="vjs-icon-placeholder"></span><span class="vjs-control-text"
-                  aria-live="polite">Picture-in-Picture</span></button><button
-                class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen"
-                aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span
-                  class="vjs-control-text" aria-live="polite">Fullscreen</span></button>
-            </div>
-            <div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1"
-              aria-describedby="my-player_component_413_description" aria-hidden="true" aria-label="Modal Window"
-              role="dialog">
-              <p class="vjs-modal-dialog-description vjs-control-text" id="my-player_component_413_description">This is
-                a modal window.</p>
-              <div class="vjs-modal-dialog-content" role="document"></div>
-            </div>
-            <div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" tabindex="-1"
-              aria-describedby="my-player_component_419_description" aria-hidden="true"
-              aria-label="Caption Settings Dialog" role="dialog">
-              <p class="vjs-modal-dialog-description vjs-control-text" id="my-player_component_419_description">
-                Beginning of dialog window. Escape will cancel and close the window.</p>
-              <div class="vjs-modal-dialog-content" role="document">
-                <div class="vjs-track-settings-colors">
-                  <fieldset class="vjs-fg-color vjs-track-setting">
-                    <legend id="captions-text-legend-my-player_component_419">Text</legend><label
-                      id="captions-foreground-color-my-player_component_419" class="vjs-label">Color</label><select
-                      aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419">
-                      <option id="captions-foreground-color-my-player_component_419-White" value="#FFF"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-White">
-                        White</option>
-                      <option id="captions-foreground-color-my-player_component_419-Black" value="#000"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Black">
-                        Black</option>
-                      <option id="captions-foreground-color-my-player_component_419-Red" value="#F00"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Red">
-                        Red</option>
-                      <option id="captions-foreground-color-my-player_component_419-Green" value="#0F0"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Green">
-                        Green</option>
-                      <option id="captions-foreground-color-my-player_component_419-Blue" value="#00F"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Blue">
-                        Blue</option>
-                      <option id="captions-foreground-color-my-player_component_419-Yellow" value="#FF0"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Yellow">
-                        Yellow</option>
-                      <option id="captions-foreground-color-my-player_component_419-Magenta" value="#F0F"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Magenta">
-                        Magenta</option>
-                      <option id="captions-foreground-color-my-player_component_419-Cyan" value="#0FF"
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-color-my-player_component_419 captions-foreground-color-my-player_component_419-Cyan">
-                        Cyan</option>
-                    </select><span class="vjs-text-opacity vjs-opacity"><label
-                        id="captions-foreground-opacity-my-player_component_419"
-                        class="vjs-label">Transparency</label><select
-                        aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-opacity-my-player_component_419">
-                        <option id="captions-foreground-opacity-my-player_component_419-Opaque" value="1"
-                          aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-opacity-my-player_component_419 captions-foreground-opacity-my-player_component_419-Opaque">
-                          Opaque</option>
-                        <option id="captions-foreground-opacity-my-player_component_419-SemiTransparent" value="0.5"
-                          aria-labelledby="captions-text-legend-my-player_component_419 captions-foreground-opacity-my-player_component_419 captions-foreground-opacity-my-player_component_419-SemiTransparent">
-                          Semi-Transparent</option>
-                      </select></span>
-                  </fieldset>
-                  <fieldset class="vjs-bg-color vjs-track-setting">
-                    <legend id="captions-background-my-player_component_419">Background</legend><label
-                      id="captions-background-color-my-player_component_419" class="vjs-label">Color</label><select
-                      aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419">
-                      <option id="captions-background-color-my-player_component_419-Black" value="#000"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Black">
-                        Black</option>
-                      <option id="captions-background-color-my-player_component_419-White" value="#FFF"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-White">
-                        White</option>
-                      <option id="captions-background-color-my-player_component_419-Red" value="#F00"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Red">
-                        Red</option>
-                      <option id="captions-background-color-my-player_component_419-Green" value="#0F0"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Green">
-                        Green</option>
-                      <option id="captions-background-color-my-player_component_419-Blue" value="#00F"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Blue">
-                        Blue</option>
-                      <option id="captions-background-color-my-player_component_419-Yellow" value="#FF0"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Yellow">
-                        Yellow</option>
-                      <option id="captions-background-color-my-player_component_419-Magenta" value="#F0F"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Magenta">
-                        Magenta</option>
-                      <option id="captions-background-color-my-player_component_419-Cyan" value="#0FF"
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-color-my-player_component_419 captions-background-color-my-player_component_419-Cyan">
-                        Cyan</option>
-                    </select><span class="vjs-bg-opacity vjs-opacity"><label
-                        id="captions-background-opacity-my-player_component_419"
-                        class="vjs-label">Transparency</label><select
-                        aria-labelledby="captions-background-my-player_component_419 captions-background-opacity-my-player_component_419">
-                        <option id="captions-background-opacity-my-player_component_419-Opaque" value="1"
-                          aria-labelledby="captions-background-my-player_component_419 captions-background-opacity-my-player_component_419 captions-background-opacity-my-player_component_419-Opaque">
-                          Opaque</option>
-                        <option id="captions-background-opacity-my-player_component_419-SemiTransparent" value="0.5"
-                          aria-labelledby="captions-background-my-player_component_419 captions-background-opacity-my-player_component_419 captions-background-opacity-my-player_component_419-SemiTransparent">
-                          Semi-Transparent</option>
-                        <option id="captions-background-opacity-my-player_component_419-Transparent" value="0"
-                          aria-labelledby="captions-background-my-player_component_419 captions-background-opacity-my-player_component_419 captions-background-opacity-my-player_component_419-Transparent">
-                          Transparent</option>
-                      </select></span>
-                  </fieldset>
-                  <fieldset class="vjs-window-color vjs-track-setting">
-                    <legend id="captions-window-my-player_component_419">Window</legend><label
-                      id="captions-window-color-my-player_component_419" class="vjs-label">Color</label><select
-                      aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419">
-                      <option id="captions-window-color-my-player_component_419-Black" value="#000"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Black">
-                        Black</option>
-                      <option id="captions-window-color-my-player_component_419-White" value="#FFF"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-White">
-                        White</option>
-                      <option id="captions-window-color-my-player_component_419-Red" value="#F00"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Red">
-                        Red</option>
-                      <option id="captions-window-color-my-player_component_419-Green" value="#0F0"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Green">
-                        Green</option>
-                      <option id="captions-window-color-my-player_component_419-Blue" value="#00F"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Blue">
-                        Blue</option>
-                      <option id="captions-window-color-my-player_component_419-Yellow" value="#FF0"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Yellow">
-                        Yellow</option>
-                      <option id="captions-window-color-my-player_component_419-Magenta" value="#F0F"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Magenta">
-                        Magenta</option>
-                      <option id="captions-window-color-my-player_component_419-Cyan" value="#0FF"
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-color-my-player_component_419 captions-window-color-my-player_component_419-Cyan">
-                        Cyan</option>
-                    </select><span class="vjs-window-opacity vjs-opacity"><label
-                        id="captions-window-opacity-my-player_component_419"
-                        class="vjs-label">Transparency</label><select
-                        aria-labelledby="captions-window-my-player_component_419 captions-window-opacity-my-player_component_419">
-                        <option id="captions-window-opacity-my-player_component_419-Transparent" value="0"
-                          aria-labelledby="captions-window-my-player_component_419 captions-window-opacity-my-player_component_419 captions-window-opacity-my-player_component_419-Transparent">
-                          Transparent</option>
-                        <option id="captions-window-opacity-my-player_component_419-SemiTransparent" value="0.5"
-                          aria-labelledby="captions-window-my-player_component_419 captions-window-opacity-my-player_component_419 captions-window-opacity-my-player_component_419-SemiTransparent">
-                          Semi-Transparent</option>
-                        <option id="captions-window-opacity-my-player_component_419-Opaque" value="1"
-                          aria-labelledby="captions-window-my-player_component_419 captions-window-opacity-my-player_component_419 captions-window-opacity-my-player_component_419-Opaque">
-                          Opaque</option>
-                      </select></span>
-                  </fieldset>
-                </div>
-                <div class="vjs-track-settings-font">
-                  <fieldset class="vjs-font-percent vjs-track-setting">
-                    <legend id="captions-font-size-my-player_component_419" class="">Font Size</legend><select
-                      aria-labelledby="captions-font-size-my-player_component_419">
-                      <option id="captions-font-size-my-player_component_419-50" value="0.50"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-50">
-                        50%</option>
-                      <option id="captions-font-size-my-player_component_419-75" value="0.75"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-75">
-                        75%</option>
-                      <option id="captions-font-size-my-player_component_419-100" value="1.00"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-100">
-                        100%</option>
-                      <option id="captions-font-size-my-player_component_419-125" value="1.25"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-125">
-                        125%</option>
-                      <option id="captions-font-size-my-player_component_419-150" value="1.50"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-150">
-                        150%</option>
-                      <option id="captions-font-size-my-player_component_419-175" value="1.75"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-175">
-                        175%</option>
-                      <option id="captions-font-size-my-player_component_419-200" value="2.00"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-200">
-                        200%</option>
-                      <option id="captions-font-size-my-player_component_419-300" value="3.00"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-300">
-                        300%</option>
-                      <option id="captions-font-size-my-player_component_419-400" value="4.00"
-                        aria-labelledby="captions-font-size-my-player_component_419 captions-font-size-my-player_component_419-400">
-                        400%</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="vjs-edge-style vjs-track-setting">
-                    <legend id="my-player_component_419" class="">Text Edge Style</legend><select
-                      aria-labelledby="my-player_component_419">
-                      <option id="my-player_component_419-None" value="none"
-                        aria-labelledby="my-player_component_419 my-player_component_419-None">None</option>
-                      <option id="my-player_component_419-Raised" value="raised"
-                        aria-labelledby="my-player_component_419 my-player_component_419-Raised">Raised</option>
-                      <option id="my-player_component_419-Depressed" value="depressed"
-                        aria-labelledby="my-player_component_419 my-player_component_419-Depressed">Depressed</option>
-                      <option id="my-player_component_419-Uniform" value="uniform"
-                        aria-labelledby="my-player_component_419 my-player_component_419-Uniform">Uniform</option>
-                      <option id="my-player_component_419-Dropshadow" value="dropshadow"
-                        aria-labelledby="my-player_component_419 my-player_component_419-Dropshadow">Dropshadow</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="vjs-font-family vjs-track-setting">
-                    <legend id="captions-font-family-my-player_component_419" class="">Font Family</legend><select
-                      aria-labelledby="captions-font-family-my-player_component_419">
-                      <option id="captions-font-family-my-player_component_419-ProportionalSansSerif"
-                        value="proportionalSansSerif"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-ProportionalSansSerif">
-                        Proportional Sans-Serif</option>
-                      <option id="captions-font-family-my-player_component_419-MonospaceSansSerif"
-                        value="monospaceSansSerif"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-MonospaceSansSerif">
-                        Monospace Sans-Serif</option>
-                      <option id="captions-font-family-my-player_component_419-ProportionalSerif"
-                        value="proportionalSerif"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-ProportionalSerif">
-                        Proportional Serif</option>
-                      <option id="captions-font-family-my-player_component_419-MonospaceSerif" value="monospaceSerif"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-MonospaceSerif">
-                        Monospace Serif</option>
-                      <option id="captions-font-family-my-player_component_419-Casual" value="casual"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-Casual">
-                        Casual</option>
-                      <option id="captions-font-family-my-player_component_419-Script" value="script"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-Script">
-                        Script</option>
-                      <option id="captions-font-family-my-player_component_419-SmallCaps" value="small-caps"
-                        aria-labelledby="captions-font-family-my-player_component_419 captions-font-family-my-player_component_419-SmallCaps">
-                        Small Caps</option>
-                    </select>
-                  </fieldset>
-                </div>
-                <div class="vjs-track-settings-controls"><button type="button" class="vjs-default-button"
-                    title="restore all settings to the default values">Reset<span class="vjs-control-text"> restore all
-                      settings to the default values</span></button><button type="button"
-                    class="vjs-done-button">Done</button></div>
-              </div><button class="vjs-close-button vjs-control vjs-button" type="button" aria-disabled="false"
-                title="Close Modal Dialog"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span
-                  class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button>
-              <p class="vjs-control-text">End of dialog window.</p>
-            </div>
-          </div>
-        </div>
-        <div class="video-info">
-          <h3>wewer</h3>
-          <div class="video-info-stats">
-            <p><span>1 views</span> <span>•</span> <span>18 hours ago</span></p>
-            <div class="likes-dislikes flex-row">
-              <p class="flex-row like">
-                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" fill="#AAAAAA" width="22"
-                  height="22" data-darkreader-inline-fill=""
-                  style="--darkreader-inline-fill:#e3d4b8; fill: rgb(56, 56, 56);">
-                  <g>
-                    <path
-                      d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z">
-                    </path>
-                  </g>
-                </svg>
-                <span>0</span>
-              </p>
-              <p class="flex-row dislike" style="margin-left: 1rem">
-                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" width="22" height="22"
-                  style="fill: rgb(56, 56, 56); --darkreader-inline-fill:#e3d4b8;" data-darkreader-inline-fill="">
-                  <g>
-                    <path
-                      d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z">
-                    </path>
-                  </g>
-                </svg>
-                <span>0</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="channel-info-description">
-          <div class="channel-info-flex">
-            <div class="channel-info flex-row">
-              <img class="avatar md"
-                src="https://res.cloudinary.com/tylerdurden/image/upload/v1602657481/random/pngfind.com-default-image-png-6764065_krremh.png"
-                alt="channel avatar">
-              <div class="channel-info-meta">
-                <h4>
-                  <a href="/channel/4959abc5-89dd-4b8f-bbc3-ad6c0e8a13f4">xxxx123</a>
-                </h4>
-                <span class="secondary small">0 subscribers</span>
-              </div>
-            </div>
 
-          </div>
-          <p>werwer</p>
-        </div>
-        <div class="comment-container">
-          <h3>1 comments</h3>
-          <div class="add-comment">
-            <img
-              src="https://res.cloudinary.com/tylerdurden/image/upload/v1602657481/random/pngfind.com-default-image-png-6764065_krremh.png"
-              alt="avatar">
-            <textarea placeholder="Add a public comment"></textarea>
-          </div>
-          <!-- 评论列表 -->
-          <div class="list">
-            <div class="comment">
-              <a href="/channel/4959abc5-89dd-4b8f-bbc3-ad6c0e8a13f4"><img
-                  src="https://res.cloudinary.com/tylerdurden/image/upload/v1602657481/random/pngfind.com-default-image-png-6764065_krremh.png"
-                  alt="avatar"></a>
-              <div class="comment-info">
-                <p class="secondary">
-                  <span><a href="/channel/4959abc5-89dd-4b8f-bbc3-ad6c0e8a13f4">xxxx123</a></span><span
-                    style="margin-left: 0.6rem">14 hours ago</span>
-                </p>
-                <p>ad</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="related-videos">
-        <h3 style="margin-bottom: 1rem">Up Next</h3>
 
-        <a href="/watch.html?id=b89cba34-4188-4c9d-a31e-4976fefd2aed">
-          <div class="sc-fzozJi dteCCc">
-            <img class="thumb"
-              src="http://res.cloudinary.com/nllcoder/video/upload/v1637310562/youtube/uigpmbcrxny7ddabkiwj.jpg"
-              alt="thumbnail">
-            <div class="video-info-container">
-              <div class="channel-avatar"></div>
-              <div class="video-info">
-                <h4>we</h4>
-                <span class="secondary">xxxx123</span>
-                <p class="secondary">
-                  <span> views</span> <span>•</span> <span>18 hours ago</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/watch.html?id=014b0418-0ead-430e-ae9b-65079eb40c29">
-          <div class="sc-fzozJi dteCCc">
-            <img class="thumb"
-              src="http://res.cloudinary.com/nllcoder/video/upload/v1637310427/youtube/sdsk6hdmzra7vpuotgws.jpg"
-              alt="thumbnail">
-            <div class="video-info-container">
-              <div class="channel-avatar"></div>
-              <div class="video-info">
-                <h4>234</h4>
-                <span class="secondary">xxxx123</span>
-                <p class="secondary">
-                  <span>0 views</span> <span>•</span> <span>18 hours ago</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/watch.html?id=ae7c68ea-4f88-4fcd-b115-57939c15d728">
-          <div class="sc-fzozJi dteCCc">
-            <img class="thumb"
-              src="http://res.cloudinary.com/nllcoder/video/upload/v1637310393/youtube/qiddbp2kgf3ztoiux85a.jpg"
-              alt="thumbnail">
-            <div class="video-info-container">
-              <div class="channel-avatar"></div>
-              <div class="video-info">
-                <h4></h4>
-                <span class="secondary">xxxx123</span>
-                <p class="secondary">
-                  <span> views</span> <span>•</span> <span>18 hours ago</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
       </div>
     </div>
   </div>
+  <script type="text/html" id="tpl-video">
+    <div class="video">
+      <!-- 视频播放器 -->
+      <video id="my-player" class="video-js vjs-big-play-centered" controls preload="auto">
+        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser
+          that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"> supports HTML5 video </a>
+        </p>
+      </video>
+    </div>
+    <div class="video-info">
+      <h3>{{ video.title }}</h3>
+      <div class="video-info-stats">
+        <p><span>{{ video.views }} views</span> <span>•</span> <span>{{ video.createdAt | relativeTime }}</span></p>
+        <div class="likes-dislikes flex-row">
+          <p class="flex-row like">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" fill="#AAAAAA" width="22"
+              height="22" data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill:#e3d4b8; fill: rgb(56, 56, 56);">
+              <g>
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z">
+                </path>
+              </g>
+            </svg>
+            <span>{{ video.likesCount }}</span>
+          </p>
+          <p class="flex-row dislike" style="margin-left: 1rem">
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" width="22" height="22"
+              style="fill: rgb(56, 56, 56); --darkreader-inline-fill:#e3d4b8;" data-darkreader-inline-fill="">
+              <g>
+                <path
+                  d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z">
+                </path>
+              </g>
+            </svg>
+            <span>{{ video.dislikesCount }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="channel-info-description">
+      <div class="channel-info-flex">
+        <div class="channel-info flex-row">
+          <img class="avatar md"
+            src="{{ video.User.avatar }}"
+            alt="channel avatar">
+          <div class="channel-info-meta">
+            <h4>
+              <a href="/channel.html?id={{video.User.id}}">{{video.User.username}}</a>
+            </h4>
+            <span class="secondary small">{{ video.subscribersCount }} subscribers</span>
+          </div>
+        </div>
+        {{if !video.isVideoMine}}
+        <button class="subscribe{{video.isSubscribed ? '' : ' active'}}">{{video.isSubscribed ? 'Subscribed' : 'Subscribe'}}</button>
+        {{/if}}
+      </div>
+      <p>{{ video.description }}</p>
+    </div>
+    <div class="comment-container">
+      <h3>{{ video.commentsCount }} comments</h3>
+      <div class="add-comment">
+        <img
+          src="{{ video.User.avatar }}"
+          alt="avatar">
+        <textarea placeholder="Add a public comment"></textarea>
+      </div>
+      <!-- 评论列表 -->
+      <div class="list">
+        
+      </div>
+    </div>
+  </script>
+  <script type="text/html" id="tpl-comments">
+    {{ each comments }}
+    <div class="comment">
+      <a href="/channel.html?id={{$value.User.id}}"><img
+          src="{{$value.User.avatar}}"
+          alt="avatar"></a>
+      <div class="comment-info">
+        <p class="secondary">
+          <span><a href="/channel.html?id={{$value.User.id}}">{{ $value.User.username }}</a></span><span
+            style="margin-left: 0.6rem">{{ $value.createdAt | relativeTime }}</span>
+        </p>
+        <p>{{ $value.text }}</p>
+      </div>
+    </div>
+    {{ /each }}
+  </script>
+  <script type="text/html" id="tpl-related-videos">
+    <h3 style="margin-bottom: 1rem">Up Next</h3>
+    {{ each videos }}
+    <a href="/watch.html?id={{$value.id}}">
+      <div class="sc-fzozJi dteCCc">
+        <img class="thumb"
+          src="{{$value.thumbnail}}"
+          alt="thumbnail">
+        <div class="video-info-container">
+          <div class="channel-avatar"></div>
+          <div class="video-info">
+            <h4>{{$value.title}}</h4>
+            <span class="secondary">{{$value.User.username}}</span>
+            <p class="secondary">
+              <span>{{ $value.views }} views</span> <span>•</span> <span>{{$value.createdAt | relativeTime}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+    {{ /each }}
+  </script>
 
-  <script src="assets/lib/video.js/video.min.js"></script>
+  <script src="./assets/lib/jquery/jquery.min.js"></script>
+  <script src="./assets/lib/video.js/video.min.js"></script>
+  <script src="./assets/lib/axios/axios.min.js"></script>
+  <script src="./assets/scripts/http.js"></script>
+  <script src="./assets/lib/dayjs/dayjs.min.js"></script>
+  <script src="./assets/lib/dayjs/plugin/relativeTime.js"></script>
+  <script src="./assets/lib/art-template/template-web.js"></script>
+
+  <script src="assets/scripts/utils.js"></script>
   <script src="assets/scripts/watch.js"></script>
 </body>
 
