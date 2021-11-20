@@ -1,3 +1,9 @@
+if (!location.href.endsWith('/login.html')) {
+	const token = localStorage.getItem('token')
+	if (!token) {
+		location.href = '/login.html'
+	}
+}
 
 jQuery.prototype.serializeObject = function () {
 	var obj = new Object()

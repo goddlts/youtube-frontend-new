@@ -2,14 +2,8 @@
 let query = getQuery(location.search)
 const videoId = query.id
 http
-  .get(`/videos/${query.id}`, {
-    // 设置请求头中的token
-    headers: {
-      Authorization: 'Bearer ' + localStorage.getItem('token')
-    }
-  })
-  .then(res => {
-    const data = res.data
+  .get(`/videos/${query.id}`)
+  .then(data => {
     if (data.success) {
       // 渲染视频详情
       const videoHtml = template('tpl-video', {
@@ -25,7 +19,8 @@ http
       loadRelatedVideos(videoId)
       // 设置支持和反对
       setLikeOrDislike(data.data)
-
+      // 点赞或取消点赞
+      likeOrDislike(data.data)
       // 发表评论
       sendComment(data.data)
       // 注册订阅按钮事件
@@ -63,8 +58,6 @@ function setLikeOrDislike (video) {
     $('.like svg').css('fill', 'rgb(56, 56, 56)')
     $('.dislike svg').css('fill', 'rgb(56, 56, 56)')
   }
-  // 点赞或取消点赞
-  likeOrDislike(video)
 }
 
 // 支持或反对
@@ -77,16 +70,10 @@ function likeOrDislike (video) {
     request(video, 'dislike', { isDisliked: true })
   })
 
-  function request (video, type, isLike) {
+  function request (video, type, obj) {
     http
-      .get(`videos/${video.id}/${type}`, {
-        // 设置请求头中的token
-        headers: {
-          Authorization: 'Bearer ' + localStorage.getItem('token')
-        }
-      })
-      .then(res => {
-        const data = res.data
+      .get(`videos/${video.id}/${type}`)
+      .then(data => {
         if (data.success) {
           if (video.isLiked && type === 'like') {
             video.isLiked = false
@@ -119,14 +106,8 @@ function likeOrDislike (video) {
 // 视频播放完成更新播放次数
 function updateViews (videoId) {
   http
-    .get(`/videos/${videoId}/view`, {
-      // 设置请求头中的token
-      headers: {
-        Authorization: 'Bearer ' + localStorage.getItem('token')
-      }
-    })
-    .then(res => {
-      const data = res.data
+    .get(`/videos/${videoId}/view`)
+    .then(data => {
       if (data.success) {
         let count = parseInt($('.video-info-stats span:first').text())
         $('.video-info-stats span:first').text(++count + ' views')
@@ -138,8 +119,7 @@ function updateViews (videoId) {
 function loadRelatedVideos (videoId) {
   http
     .get('/videos')
-    .then(res => {
-      const data = res.data
+    .then(data => {
       const videos = data.data.filter(item => {
         return item.id !== videoId
       })
@@ -158,15 +138,10 @@ function sendComment (video) {
     http
       .post(`videos/${video.id}/comment`, {
         text: this.value,
-      }, {
-        // 设置请求头中的token
-        headers: {
-          Authorization: 'Bearer ' + localStorage.getItem('token')
-        }
       })
-      .then(res => {
-        if (res.data.success) {
-          comments.unshift(res.data.data)
+      .then(data => {
+        if (data.success) {
+          comments.unshift(data.data)
           $('.comment-container h3').text(`${comments.length} comments`)
           // 评论列表的渲染
           const commentHtml = template('tpl-comments', {
@@ -184,14 +159,9 @@ function sendComment (video) {
 function subscribe (userId) {
   $('.subscribe').on('click', function () {
     http
-      .get(`/users/${userId}/togglesubscribe`, {
-          // 设置请求头中的token
-          headers: {
-            Authorization: 'Bearer ' + localStorage.getItem('token')
-          }
-      })
-      .then(res => {
-        if (res.data.success) {
+      .get(`/users/${userId}/togglesubscribe`)
+      .then(data => {
+        if (data.success) {
           $('.subscribe').toggleClass('active')
           // 计算订阅人数
           let count = parseInt($('.channel-info-meta .secondary.small').text())

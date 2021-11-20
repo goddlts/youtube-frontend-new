@@ -93,14 +93,8 @@ $('.next-button').on('click', function () {
         url: window.uploadVideoUrl,
         // 缩略图就是把视频的后缀改成 jpg
         thumbnail: imgUrl
-      }, {
-        // 设置请求头中的token
-        headers: {
-          Authorization: 'Bearer ' + localStorage.getItem('token')
-        }
       })
-      .then(res => {
-        const data = res.data
+      .then(data => {
         if (data.success) {
           window.uploadVideoUrl = null
           $('.next-button').prop('disabled', true).css('cursor', 'wait')
@@ -108,6 +102,17 @@ $('.next-button').on('click', function () {
           $(this).text('Next');
           $('.video-preview').css('display', 'block');
           $('.video-form').css('display', 'none');
+
+          http
+          .get('/videos')
+          .then(data => {
+            if (data.success) {
+              let html = template('tpl-videos', {
+                videos: data.data
+              })
+              $('.videos').html(html)
+            }
+          })
         }
       })
   }
@@ -117,8 +122,7 @@ $('.next-button').on('click', function () {
 // 2. 渲染视频列表
 http
   .get('/videos')
-  .then(res => {
-    const data = res.data
+  .then(data => {
     if (data.success) {
       let html = template('tpl-videos', {
         videos: data.data

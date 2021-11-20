@@ -31,9 +31,7 @@ $('#formLogin').validate({
     // 发送请求，进行登陆操作
     http
       .post('/auth/login', $(this).serializeObject())
-      .then(res => {
-        console.log(res)
-        const data = res.data
+      .then(data => {
         
         if (data.success) {
           // 登录成功记录 token
@@ -52,13 +50,7 @@ $('#formLogin').validate({
             backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)"
           }).showToast()
         }
-
-      }).catch(err => {
-        Toastify({
-          text: err.response.data?.message || '登陆失败',
-          backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)"
-        }).showToast()
-      }) 
+      })
   },
   invalid: function () {
   }
@@ -74,12 +66,6 @@ $('#formRegister').on('submit', function () {
       // 提示
       Toastify({
         text: "注册成功",
-        backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)"
-      }).showToast()
-    })
-    .catch(err => {
-      Toastify({
-        text: err.response.data?.message || '注册失败',
         backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)"
       }).showToast()
     })
